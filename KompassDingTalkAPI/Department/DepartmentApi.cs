@@ -1,6 +1,4 @@
-﻿using DingTalk.Api;
-using DingTalk.Api.Request;
-using DingTalk.Api.Response;
+﻿using KompassDingTalkAPI;
 using GrapeCity.Forguncy.ServerApi;
 using KompassDingTalkAPI.Department.Dto;
 using KompassDingTalkAPI.Token;
@@ -14,7 +12,7 @@ namespace KompassDingTalkAPI.Department
 {
     public class DepartmentApi : ApiBase
     {
-        public async Task<DepartmentResult> DepartmentList(string lang = "zh_CN", bool fetchChild = true, string id = null)
+        public DepartmentResult DepartmentList(string lang = "zh_CN", bool fetchChild = true, string id = null)
         {
             var queryParameters = new Dictionary<string, string>()
             {
@@ -26,7 +24,7 @@ namespace KompassDingTalkAPI.Department
                 queryParameters.Add("id", id);
             }
 
-            return await Get<DepartmentResult>("department/list?access_token={ACCESS_TOKEN}", queryParameters);
+            return Get<DepartmentResult>("department/list?access_token={ACCESS_TOKEN}", queryParameters);
         }
     }
 }

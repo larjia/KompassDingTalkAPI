@@ -15,12 +15,12 @@ namespace KompassDingTalkAPI
 
         public static string GetAppKey()
         {
-            return "dinglqpeai6ttroykpji";
+            return "dingutdsljohyeuj7lc8";
         }
 
         public static string GetAppSecret()
         {
-            return "c871j4jtrn2CXzpOGGjdjWet8qxIWsu0GSI8ZnS9g-yCbY7G-QqzaZyqh-jVNcfw";
+            return "PwJwPq00TJV4UGYSmGzXMgazQozHQy8i5gxg04zsJ-hBC6DkHVxs5Y62c45N5u0_";
         }
     }
 }

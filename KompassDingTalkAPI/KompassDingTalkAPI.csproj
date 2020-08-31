@@ -52,9 +52,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="TopSdk">
-      <HintPath>..\..\..\..\Downloads\dingtalk-sdk-cshap\TopSdk.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiBase.cs" />
@@ -63,7 +60,7 @@
     <Compile Include="Department\DepartmentApi.cs" />
     <Compile Include="Department\Dto\DepartmentDto.cs" />
     <Compile Include="Department\Dto\DepartmentResult.cs" />
-    <Compile Include="DingTalkApi.cs" />
+    <Compile Include="Department\MyDepartmentApi.cs" />
     <Compile Include="DingTalkApiException.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
